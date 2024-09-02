@@ -27,8 +27,8 @@
 &kp LALT   &kp A      &kp S     &kp D      &kp F      &kp G                           &kp H      &kp J      &kp K      &kp L      &mt LGUI SEMI  &kp SQT
 &kp LCTRL  &kp Z      &kp X     &kp C      &kp V      &kp B                           &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH       &kp RALT
                       &kp LBKT  &mt LGUI RBKT                                                               &kp MINUS  &kp EQUAL
-                                            &kp SPACE  &kp HOME &kp INS             &kp DEL &kp TAB &kp &kp END
-                                            &kp DEL &kp HOME                        &kp HOME &kp DEL
+                                &kp SPACE  &kp HOME &kp INS                       &kp DEL &kp TAB &kp &kp END
+                                &kp DEL &kp HOME                                             &kp HOME &kp DEL
 
             >;
         };
