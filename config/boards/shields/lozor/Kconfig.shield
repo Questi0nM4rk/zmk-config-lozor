@@ -1,0 +1,5 @@
+config SHIELD_LOZOR_LEFT
+    def_bool $(shields_list_contains,lozor_left)
+
+config SHIELD_LOZOR_RIGHT
+    def_bool $(shields_list_contains,lozor_right)
