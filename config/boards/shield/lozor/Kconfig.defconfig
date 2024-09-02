@@ -1,0 +1,17 @@
+if SHIELD_LOZOR_LEFT
+    config ZMK_KEYBOARD_NAME
+        default "Lozor_L"
+
+    config ZMK_SPLIT_ROLE_CENTRAL
+        default y
+endif
+
+if SHIELD_LOZOR_RIGHT
+    config ZMK_KEYBOARD_NAME
+        default "Lozor_R"
+endif
+
+if SHIELD_LOZOR_LEFT || SHIELD_LOZOR_RIGHT
+    config ZMK_SPLIT
+        default y
+endif

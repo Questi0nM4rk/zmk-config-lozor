@@ -22,5 +22,5 @@ include:
     shield: lozor_left
   - board: nice_nano_v2
     shield: lozor_right
-#  - board: nice_nano_v2
-#    shield: settings_reset
+  - board: nice_nano_v2
+    shield: settings_reset
