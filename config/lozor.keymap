@@ -10,22 +10,21 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {     // =============================================================
-
+        default_layer {
             bindings = <
-&kp GRAVE       &kp N1  &kp N2    &kp N3     &kp N4    &kp N5        &kp N6      &kp N7     &kp N8         &kp N9             &kp N0         &kp ESCAPE
-&kp TAB         &kp Q   &kp W     &kp F      &kp P     &kp B         &kp J       &kp L      &kp U          &kp Y              &kp SEMICOLON  &kp BSLH
-&sk LEFT_SHIFT  &kp A   &kp R     &kp S      &kp T     &kp G         &kp M       &kp N      &kp E          &kp I              &kp O          &kp SQT
-&kp LCTRL       &kp Z   &kp X     &kp C      &kp D     &kp V         &kp K       &kp H      &kp COMMA      &kp DOT            &kp FSLH       &kp RALT
-                        &kp LBKT  &kp MINUS                                                 &kp EQUAL      &kp RIGHT_BRACKET
-                                  &kp SPACE  &to 1     &kp HOME      &kp END     &sl 2      &kp BACKSPACE
-                                             &kp LGUI  &bt BT_PRV    &bt BT_NXT  &kp ENTER
+&kp GRAVE       &mt A NUMBER_1  &kp N2    &kp N3     &kp N4    &kp N5        &kp N6      &kp N7     &kp N8         &kp N9             &kp N0         &kp ESCAPE
+&kp TAB         &kp Q           &kp W     &kp F      &kp P     &kp B         &kp J       &kp L      &kp U          &kp Y              &kp SEMICOLON  &kp BSLH
+&sk LEFT_SHIFT  &kp A           &kp R     &kp S      &kp T     &kp G         &kp M       &kp N      &kp E          &kp I              &kp O          &kp SQT
+&kp LCTRL       &kp Z           &kp X     &kp C      &kp D     &kp V         &kp K       &kp H      &kp COMMA      &kp DOT            &kp FSLH       &kp RALT
+                                &kp LBKT  &kp MINUS                                                 &kp EQUAL      &kp RIGHT_BRACKET
+                                          &kp SPACE  &to 1     &kp HOME      &kp END     &sl 2      &kp BACKSPACE
+                                                     &kp LGUI  &bt BT_PRV    &bt BT_NXT  &kp ENTER
             >;
         };
+
         // =============================================================
 
-        qwerty {    // =============================================================
-
+        qwerty {
             bindings = <
 &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp ESC
 &kp TAB    &kp Q   &kp W   &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P     &kp NON_US_BACKSLASH
@@ -36,10 +35,10 @@
                                    &trans  &trans    &trans  &trans
             >;
         };
+
         // =============================================================
 
-        F_keys {    // =============================================================
-
+        F_keys {
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4       &kp F5        &kp F6            &kp F7  &kp F8        &kp F9      &kp F10  &kp F11  &kp F12
 &none   &none   &none   &none        &bt BT_SEL 3  &none             &none   &bt BT_SEL 0  &none       &none    &none    &none
@@ -50,6 +49,7 @@
                                      &none         &none             &none   &none
             >;
         };
+
         // =============================================================
     };
 };
