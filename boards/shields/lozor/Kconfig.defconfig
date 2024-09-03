@@ -6,6 +6,12 @@ if SHIELD_LOZOR_LEFT
     config ZMK_SPLIT_ROLE_CENTRAL
         default y
 
+    config USB
+        default y
+
+    config BLE
+        default y
+
 endif
 
 if SHIELD_LOZOR_LEFT || SHIELD_LOZOR_RIGHT
