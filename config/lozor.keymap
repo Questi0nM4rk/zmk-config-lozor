@@ -12,13 +12,13 @@
 
         default_layer {
             bindings = <
-&kp GRAVE       &mt + N1    &mt ě N2    &mt š N3    &mt č N4    &mt ř N5        &mt ž N6    &mt ý N7    &mt á N8    &mt í N9    &mt é N0        &kp ESCAPE
-&kp TAB         &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SEMICOLON   &kp BSLH
-&sk LEFT_SHIFT  &kp A       &kp R       &kp S       &kp T       &kp G           &kp M       &kp N       &kp E       &kp I       &kp O           &kp SQT
-&kp LCTRL       &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH        &kp RALT
-                            &kp LBKT    &kp MINUS                                                       &kp EQUAL   &kp RIGHT_BRACKET
-                                        &kp SPACE   &to 1       &kp HOME        &kp END     &sl 2       &kp BACKSPACE
-                                                    &kp LGUI    &bt BT_PRV      &bt BT_NXT  &kp ENTER
+&kp GRAVE       &mt A B  &mt       &mt        &mt       &mt           &mt         &mt        &mt            &mt                &mt            &kp ESCAPE
+&kp TAB         &kp Q    &kp W     &kp F      &kp P     &kp B         &kp J       &kp L      &kp U          &kp Y              &kp SEMICOLON  &kp BSLH
+&sk LEFT_SHIFT  &kp A    &kp R     &kp S      &kp T     &kp G         &kp M       &kp N      &kp E          &kp I              &kp O          &kp SQT
+&kp LCTRL       &kp Z    &kp X     &kp C      &kp D     &kp V         &kp K       &kp H      &kp COMMA      &kp DOT            &kp FSLH       &kp RALT
+                         &kp LBKT  &kp MINUS                                                 &kp EQUAL      &kp RIGHT_BRACKET
+                                   &kp SPACE  &to 1     &kp HOME      &kp END     &sl 2      &kp BACKSPACE
+                                              &kp LGUI  &bt BT_PRV    &bt BT_NXT  &kp ENTER
             >;
         };
 
