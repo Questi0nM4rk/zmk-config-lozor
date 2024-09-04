@@ -8,7 +8,6 @@
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
-        wakeup-source = y;
         columns = <12>;
         rows = <6>;
         
@@ -26,6 +25,7 @@
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
+        wakeup-source;
 
         diode-direction = "col2row";
         row-gpios
