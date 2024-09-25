@@ -6,4 +6,4 @@
 
 ![Photo 3](photo_left.jpg)
 
-![Photo 4](photo_left.jpg)
+![Photo 4](photo_right2.jpg)
