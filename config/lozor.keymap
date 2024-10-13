@@ -12,13 +12,13 @@
 
         Colemak-DH {
             bindings = <
-&kp GRAVE                      &kp N1  &kp N2    &kp N3     &kp N4    &kp N5             &kp N6   &kp N7     &kp N8         &kp N9             &kp N0         &kp ESCAPE
-&kp TAB                        &kp Q   &kp W     &kp F      &kp P     &kp B              &kp J    &kp L      &kp U          &kp Y              &kp SEMICOLON  &kp BSLH
-&sk LEFT_SHIFT                 &kp A   &kp R     &kp S      &kp T     &kp G              &kp M    &kp N      &kp E          &kp I              &kp O          &kp SQT
-&mt LC(LEFT_ALT) LEFT_CONTROL  &kp Z   &kp X     &kp C      &kp D     &kp V              &kp K    &kp H      &kp COMMA      &kp DOT            &kp FSLH       &kp RALT
-                                       &kp LBKT  &kp MINUS                                                   &kp EQUAL      &kp RIGHT_BRACKET
-                                                 &kp SPACE  &mo 1     &kp HOME           &kp DEL  &mo 2      &kp BACKSPACE
-                                                            &kp LGUI  &kp PRINTSCREEN    &to 3    &kp ENTER
+&kp GRAVE       &kp N1  &kp N2    &kp N3     &kp N4    &kp N5      &kp N6   &kp N7     &kp N8         &kp N9             &kp N0         &kp ESCAPE
+&kp TAB         &kp Q   &kp W     &kp F      &kp P     &kp B       &kp J    &kp L      &kp U          &kp Y              &kp SEMICOLON  &kp BSLH
+&sk LEFT_SHIFT  &kp A   &kp R     &kp S      &kp T     &kp G       &kp M    &kp N      &kp E          &kp I              &kp O          &kp SQT
+&kp LCTRL       &kp Z   &kp X     &kp C      &kp D     &kp V       &kp K    &kp H      &kp COMMA      &kp DOT            &kp FSLH       &kp LALT
+                        &kp LBKT  &kp MINUS                                            &kp EQUAL      &kp RIGHT_BRACKET
+                                  &kp SPACE  &mo 1     &kp HOME    &kp DEL  &mo 2      &kp BACKSPACE
+                                             &kp LGUI  &kp RALT    &to 3    &kp ENTER
             >;
         };
 
@@ -51,13 +51,13 @@
 
         gaming {
             bindings = <
-&to 0  &none      &none   &none      &none   &none     &none  &none  &none  &none  &none  &none
-&none  &none      &kp N1  &kp N2     &kp N3  &kp N4    &none  &none  &none  &none  &none  &none
-&none  &kp LSHFT  &kp Q   &kp W      &kp E   &kp R     &none  &none  &none  &none  &none  &none
-&none  &kp LCTRL  &kp A   &kp S      &kp D   &kp F     &none  &none  &none  &none  &none  &none
-                  &kp V   &kp T                                      &none  &none
-                          &kp SPACE  &kp C   &none     &none  &none  &none
-                                     &none   &none     &none  &none
+&to 0  &none      &none   &none      &none     &none     &none  &none  &none  &none  &none  &none
+&none  &none      &kp N1  &kp N2     &kp N3    &kp N4    &none  &none  &none  &none  &none  &none
+&none  &kp LSHFT  &kp Q   &kp W      &kp E     &kp R     &none  &none  &none  &none  &none  &none
+&none  &kp LCTRL  &kp A   &kp S      &kp D     &kp F     &none  &none  &none  &none  &none  &none
+                  &kp V   &kp T                                        &none  &none
+                          &kp SPACE  &kp C     &none     &none  &none  &none
+                                     &kp RALT  &none     &none  &none
             >;
         };
 
