@@ -57,7 +57,7 @@
 &none  &kp LCTRL  &kp A   &kp S      &kp D     &kp F     &none  &none  &none  &none  &none  &none
                   &kp V   &kp T                                        &none  &none
                           &kp SPACE  &kp C     &none     &none  &none  &none
-                                     &kp RALT  &none     &none  &none
+                                     &kp LALT  &none     &none  &none
             >;
         };
 
