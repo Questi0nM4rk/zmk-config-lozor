@@ -1,0 +1,12 @@
+file_format: "1"
+id: lozor
+name: Lozor
+type: shield
+url: https://github.com/Questi0nM4rk/zmk-config-lozor
+requires: [nice_nano_v2]
+features:
+  - keys
+  - stucdio
+siblings:
+  - lozor_left
+  - lozor_right
