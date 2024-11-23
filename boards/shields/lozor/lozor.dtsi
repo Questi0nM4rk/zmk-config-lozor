@@ -3,8 +3,8 @@
 #include "lozor-layout.dtsi"
 
 &physical_layout0 {
-    kscan = &kscan0;
-    transform = &default_transform;
+    kscan = <&kscan0>;
+    transform = <&default_transform>;
 };
 
 / {
