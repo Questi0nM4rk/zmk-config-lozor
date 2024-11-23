@@ -2,17 +2,18 @@
 #include <physical_layouts.dtsi>
 #include "lozor-layout.dtsi"
 
+&physical_layout0 {
+    kscan = &kscan0;
+    transform = &default_transform;
+};
+
 / {
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical_layout = &physical_layout0;
     };
 
-    &physical_layout0 {
-        kscan = &kscan0;
-        transform = &default_transform;
-    };
-
+    
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <12>;
