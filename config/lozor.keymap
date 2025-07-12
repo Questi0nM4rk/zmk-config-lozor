@@ -62,11 +62,11 @@
         };
 
         // RAISE LAYER - Media, System, BT (unchanged)
-        raise_layer {
+        media_layer {
             bindings = <
 &kp F1  &kp F2           &kp F3      &kp F4        &kp F5      &kp F6         &kp F7          &kp F8          &kp F9         &kp F10        &kp F11        &kp F12
 &none   &none            &none       &kp C_VOL_UP  &none       &none          &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
-&none   &kp PRINTSCREEN  &kp C_PREV  &kp C_PP      &kp C_NEXT  &none          &none           &studio_unlock  &kp C_BRI_DEC  &kp C_BRI_INC  &kp RIGHT      &none
+&none   &kp PRINTSCREEN  &kp C_PREV  &kp C_PP      &kp C_NEXT  &none          &none           &studio_unlock  &kp C_BRI_DEC  &kp C_BRI_INC  &none      &none
 &none   &none            &none       &kp C_VOL_DN  &kp C_MUTE  &none          &bt BT_CLR_ALL  &bt BT_DISC 0   &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
                          &none       &none                                                                    &none          &none
                                      &none         &none       &bootloader    &sys_reset      &none           &none
@@ -75,12 +75,12 @@
         };
 
         // LOWER LAYER - Numbers, Symbols, Arrows (unchanged)
-        lower_layer {
+        arrows_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &kp PG_UP  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &kp PG_DN  &trans     &trans
                 &trans  &trans                                      &trans    &trans
                         &trans  &trans  &trans    &trans  &trans    &trans
                                 &trans  &trans    &trans  &trans
@@ -90,13 +90,13 @@
         // GAMING LAYER - QWERTY + Superglide at comma position
         gaming_layer {
             bindings = <
-&kp ESC           &kp F1         &kp F2          &kp F3          &kp F4          &kp F5        &trans  &trans  &trans  &trans  &trans      &to DEFAULT
-&kp GRAVE         &kp TAB        &kp N1          &kp N2          &kp N3          &kp N4        &trans  &trans  &trans  &trans  &trans      &trans
-&kp SEMICOLON     &kp LSHIFT     &kp Q           &kp W           &kp E           &kp R         &trans  &trans  &trans  &trans  &trans      &trans
-&kp superglide    &kp LCTRL      &kp A           &kp S           &kp D           &kp F         &trans  &trans  &trans &trans  &trans  &trans
-                                 &kp T           &kp V                                                         &trans  &trans
-                                                 &kp SPACE       &kp C           &none         &trans  &trans  &trans
-                                                                 &kp LALT        &none         &to 0   &trans
+&kp ESC        &kp F1      &kp F2  &kp F3    &kp F4    &kp F5        &trans  &trans  &trans  &trans  &trans  &trans
+&kp GRAVE      &kp TAB     &kp N1  &kp N2    &kp N3    &kp N4        &trans  &trans  &trans  &trans  &trans  &trans
+&kp SEMICOLON  &kp LSHIFT  &kp Q   &kp W     &kp E     &kp R         &trans  &trans  &trans  &trans  &trans  &trans
+&superglide    &kp LCTRL   &kp A   &kp S     &kp D     &kp F         &trans  &trans  &trans  &trans  &trans  &trans
+                           &kp T   &kp V                                             &trans  &trans
+                                   &kp SPACE &kp G     &kp C         &trans  &trans  &trans
+                                             &kp LALT  &kp X         &to 0   &trans
             >;
         };
     };
