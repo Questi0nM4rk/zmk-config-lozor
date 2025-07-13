@@ -13,48 +13,30 @@
     // =============================================================
     
     macros {
-        superglide_8ms: superglide_8ms {  // Base version: ~1.2-1.3 frames
+        superglide_5ms: superglide_5ms {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <0>;
+            wait-ms = <4>;  // ~5ms total timing
             tap-ms = <1>;
-            bindings = 
-                <&macro_press &kp SPACE>,
-                <&macro_wait_time 8>,
-                <&macro_press &kp LCTRL>,
-                <&macro_pause_for_release>,
-                <&macro_release &kp LCTRL>,
-                <&macro_release &kp SPACE>;
+            bindings = <&kp SPACE>, <&kp LCTRL>;
         };
 
-        superglide_10ms: superglide_10ms {  // Variation for mid-range FPS
+        superglide_6ms: superglide_6ms {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <0>;
+            wait-ms = <5>;  // ~6ms total timing
             tap-ms = <1>;
-            bindings = 
-                <&macro_press &kp SPACE>,
-                <&macro_wait_time 10>,
-                <&macro_press &kp LCTRL>,
-                <&macro_pause_for_release>,
-                <&macro_release &kp LCTRL>,
-                <&macro_release &kp SPACE>;
+            bindings = <&kp SPACE>, <&kp LCTRL>;
         };
 
-        superglide_12ms: superglide_12ms {  // Slower variation for consistency
+        superglide_7ms: superglide_7ms {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <0>;
+            wait-ms = <6>;  // ~7ms total timing
             tap-ms = <1>;
-            bindings = 
-                <&macro_press &kp SPACE>,
-                <&macro_wait_time 12>,
-                <&macro_press &kp LCTRL>,
-                <&macro_pause_for_release>,
-                <&macro_release &kp LCTRL>,
-                <&macro_release &kp SPACE>;
+            bindings = <&kp SPACE>, <&kp LCTRL>;
+        };
     };
-};
 
 
     // =============================================================
@@ -62,6 +44,13 @@
     // =============================================================
     
     behaviors {
+        spg_psrnd: superglide_pseudorandom {
+            compatible = "zmk,behavior-superglide-pseudorandom";
+            #binding-cells = <0>;
+            tap-ms = <200>;
+            bindings = <&superglide_6ms>, <&superglide_5ms>, <&superglide_7ms>;
+        };
+
         td_lshift: tap_dance_left_shift {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -122,7 +111,7 @@
 &kp ESC          &kp F1      &kp F2  &kp F3     &kp F4    &kp F5        &trans  &trans  &trans  &trans  &trans  &trans
 &kp GRAVE        &kp TAB     &kp N1  &kp N2     &kp N3    &kp N4        &trans  &trans  &trans  &trans  &trans  &trans
 &kp SEMICOLON    &kp LSHIFT  &kp Q   &kp W      &kp E     &kp R         &trans  &trans  &trans  &trans  &trans  &trans
-&superglide_8ms  &kp LCTRL   &kp A   &kp S      &kp D     &kp F         &trans  &trans  &trans  &trans  &trans  &trans
+&spg_psrnd       &kp LCTRL   &kp A   &kp S      &kp D     &kp F         &trans  &trans  &trans  &trans  &trans  &trans
                              &kp T   &kp V                                             &trans  &trans
                                      &kp SPACE  &kp G     &kp C         &trans  &trans  &trans
                                                 &kp LALT  &kp X         &to 0   &trans
